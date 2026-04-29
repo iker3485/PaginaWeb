@@ -1,0 +1,303 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 2; /* Asegura que el footer esté en el frente */
+}
+
+/* Ajusta el contenido dentro del footer si es necesario */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+svg {
+  width: 600px;
+  height: 600px;
+}
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%; /* Ajusta el ancho máximo para adaptarse mejor a pantallas más pequeñas */
+  margin: 0 auto;
+}
+button {
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  margin: 0 10px 10px 0;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-family: "Comfortaa", sans-serif;
+  border-radius: 4px;
+  transition: all 0.25s ease;
+}
+  #btn-happy {
+    background-color: #eb584d;
+    &:hover {
+      background-color: darken(#eb584d, 10%);
+    }
+  }
+  #btn-cool {
+    background-color: #007185;
+    &:hover {
+      background-color: darken(#007185, 10%);
+    }
+  }
+  #btn-sexy {
+    background-color: #e5004e;
+    :hover {
+      background-color: darken(#e5004e, 10%);
+    }
+  }
+  #btn-crazy {
+    background-color: #883277;
+    &:hover {
+      background-color: darken(#883277, 10%);
+    }
+  }
+
+
+button:last-child {
+  margin-right: 0;
+}
+button:focus {
+  outline: none;
+  border: 0;
+}
+
+
+  
+  /* Makes sure that everything is 100% height */ 
+  body {
+    margin: 0;
+    width: 100vw;
+    height: 100%; 
+    overflow: hidden; 
+    padding: 0;
+    margin: 0;
+    background-color: #ffeaf1;
+    
+  }
+  html { 
+  height: 100%; 
+  overflow: hidden; 
+  
+  
+  } 
+  
+  /* gets the actual input out of the way; 
+  we're going to style the label instead */ 
+  
+ 
+    
+   
+    
+    /* drawer menu pane - note the 0px width */ 
+    
+
+    
+    /* actual page content pane */ 
+    
+    #page-content { 
+    margin-left: 0px; 
+    margin-top: 0px; 
+    width: 100%; 
+    height: 100%; 
+    overflow-x:hidden; 
+    overflow-y:scroll; 
+    -webkit-overflow-scrolling: touch; 
+    }
+    
+    /*drawer menu*/
+#overlay {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transition: 0.3s linear;
+}
+
+#overlay.active {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#burger {
+  position: fixed;
+  top: 20px; /* Cambia el valor de top a 20px para mantener la distancia desde la parte superior */
+  left: 20px; /* Usa "left" en lugar de "right" para colocarlo en la parte izquierda */
+  background: #17141d;
+  padding: 1rem;
+  z-index: 1000;
+  cursor: pointer;
+  transition: 0.3s linear;
+  box-shadow: 2px 2px 5px #17141d;
+}
+
+
+#burger:hover {
+  background-color: goldenrod;
+}
+
+.line{
+  width: 22px;
+  margin-bottom: 5px;
+  height: 2px;
+  background-color: white;
+}
+
+.line:last-child {
+  margin-bottom: 0;
+}
+
+#nav {
+  height: calc(100vh - 50px); /* Altura ajustada menos el alto del footer */
+  width: 300px;
+  display: flex;
+  flex-direction: column; /* Alinea los hijos verticalmente */
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #17141d;
+  color: white;
+  position: fixed;
+  left: 0;
+  transform: translateX(-100%);
+  transition: transform 0.3s linear;
+  margin-left: 0;
+  overflow-y: auto; /* Habilita el scroll vertical */
+  padding-bottom: 50px; /* Espacio para el footer */
+}
+
+
+#nav.active {
+  transform: translateX(0);
+}
+
+
+ul {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 30%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+/*li*/
+#uno {
+  font-size: 19px;
+  display:block; 
+  padding:10px; 
+  color:#ffffff; 
+  text-decoration:dotted; 
+}
+/*li*/
+.text {
+  width: 100%;
+  text-align: center;
+  line-height: 1.8;
+  letter-spacing: 3px;
+}
+
+#a_drawer {
+  color: #fafafa;
+  transition: 0.3s linear;
+}
+
+
+
+#a_drawer:hover {
+  color: goldenrod;
+  outline: none;
+}
+
+@media screen and (max-width: 600px) {
+#burger {
+  width: 4%;
+  top: 1%;
+  
+}
+
+.container {
+
+  height: 70%;
+  width: 100%;
+}
+#page-content { 
+  margin-left: 0px; 
+  margin-top: 0px; 
+  width: 100%; 
+  height: 100%; 
+  overflow-x:hidden; 
+  overflow-y:scroll; 
+  -webkit-overflow-scrolling: touch; 
+  }
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; /* Ajusta el ancho máximo para adaptarse mejor a pantallas más pequeñas */
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1366px) and (max-height: 768px) {
+  .container {
+
+    height: 80%;
+    width: 100%;
+  }
+  #page-content { 
+    margin-left: 0px; 
+    margin-top: 0px; 
+    width: 100%; 
+    height: 100%; 
+    overflow-x:hidden; 
+    overflow-y:scroll; 
+    -webkit-overflow-scrolling: touch; 
+    }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; /* Ajusta el ancho máximo para adaptarse mejor a pantallas más pequeñas */
+    margin: 0 auto;
+  }
+}

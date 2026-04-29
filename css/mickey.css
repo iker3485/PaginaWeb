@@ -1,0 +1,80 @@
+/* Nothing here needed for app */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 2; /* Asegura que el footer esté en el frente */
+  }
+  
+  /* Ajusta el contenido dentro del footer si es necesario */
+  .footer-content {
+    
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+body{
+    margin-top: 4%;
+    background-color:#99ccff;
+    text-align: center;
+  }
+  sup{
+    font-size: 55%;
+  }
+  span{
+    display:inline-block;
+    position:relative;
+    margin:10px;
+    padding:4px;
+    width:700px;
+    line-height: 18px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    cursor: default;
+    background-color:#fdfdfd00;
+    border-radius:5px;
+    font: 26px verdana;
+    color: #fff; 
+    text-align: center;
+  }
+  p {
+    margin: 15px;
+  }
+  
+  ul {
+    padding-left:10px; 
+    list-style:none;
+    list-style-type: none;
+  }
+  
+  li {
+    text-align:left;
+    padding-top:5px;
+  }
+  @media (max-width: 768px) {
+    body {
+        margin-top: 10%; /* Ajusta el margen superior */
+    }
+
+    span {
+        width: 90%; /* Ajusta el ancho del span */
+        font-size: 20px; /* Ajusta el tamaño del texto */
+    }
+}

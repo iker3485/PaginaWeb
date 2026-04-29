@@ -1,0 +1,119 @@
+*,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#overlay {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transition: 0.3s linear;
+  z-index: 1000; /* Set a higher z-index value */
+    /* ... other styles remain unchanged ... */
+}
+
+#overlay.active {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#burger {
+  z-index: 1200; /* Set a higher z-index value for the burger icon */
+  position: fixed;
+  top: 20px; /* Cambia el valor de top a 20px para mantener la distancia desde la parte superior */
+  left: 20px; /* Usa "left" en lugar de "right" para colocarlo en la parte izquierda */
+  background: #17141d;
+  padding: 1rem;
+  cursor: pointer;
+  transition: 0.3s linear;
+  box-shadow: 2px 2px 5px #17141d;
+}
+
+
+#burger:hover {
+  background-color: goldenrod;
+}
+
+.line{
+  width: 22px;
+  margin-bottom: 5px;
+  height: 2px;
+  background-color: white;
+}
+
+.line:last-child {
+  margin-bottom: 0;
+}
+
+#nav {
+  height: calc(100vh - 50px); /* Altura ajustada menos el alto del footer */
+  width: 300px;
+  display: flex;
+  flex-direction: column; /* Alinea los hijos verticalmente */
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #17141d;
+  color: white;
+  position: fixed;
+  left: 0;
+  transform: translateX(-100%);
+  transition: transform 0.3s linear;
+  margin-left: 0;
+  overflow-y: auto; /* Habilita el scroll vertical */
+  padding-bottom: 50px; /* Espacio para el footer */
+}
+
+
+#nav.active {
+  transform: translateX(0);
+}
+
+
+ul {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 30%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+li {
+    font-size: 19px;
+    display:block; 
+    padding:10px; 
+    color:#ffffff; 
+    text-decoration:dotted; 
+}
+
+.text {
+  width: 10%;
+  text-align: center;
+  line-height: 1.8;
+  letter-spacing: 3px;
+}
+
+h1 {
+  margin-bottom: 3rem;
+}
+
+a {
+  color: #fafafa;
+  transition: 0.3s linear;
+}
+
+
+a:hover {
+  color: goldenrod;
+  outline: none;
+}
+
+
